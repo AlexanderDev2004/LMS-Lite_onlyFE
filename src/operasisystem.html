@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMS Lite | Only Front End</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav
+        class="nav-sticky flex items-center justify-between p-4 xl:px-24 z-30 transition-all duration-700 top-0 left-0 w-full border-transparent"
+      >
+        <div class="main-menu flex items-center gap-5">
+          <h2 class="text-2xl font-playfair font-semibold me-2 sm:me-5">LMS</h2>
+          <a
+            href="#course"
+            class="text-md cursor-pointer hover:scale-105 transition-all duration-300"
+            >Course</a
+          >
+          <a
+            href="#tasks"
+            class="text-md cursor-pointer hover:scale-105 transition-all duration-300"
+            >Tasks</a
+          >
+        </div>
+        <!-- {{--
+        <span
+          class="sign-in-btn text-slate-50 font-semibold border-2 border-transparent bg-neutral-950 px-5 py-2 rounded-full hover:bg-transparent hover:border-neutral-950 hover:text-neutral-800 transition-all duration-500"
+          ><a href="#"> Sign In </a></span
+        >
+        --}} -->
+        <button
+          type="button"
+          class="flex gap-x-3 py-1 px-3 items-center text-sm rounded-lg transition-all duration-500 hover:ring-2 hover:ring-gray-600 hover:scale-90 md:me-0 focus:ring-2 focus:ring-gray-400 focus:scale-90"
+          id="user-menu-button"
+          aria-expanded="false"
+          data-dropdown-toggle="user-dropdown"
+          data-dropdown-placement="bottom"
+        >
+          <span class="sr-only">Open user menu</span>
+          <img
+            class="w-10 h-10 rounded-full object-cover ring-1 ring-neutral-800"
+            src="https://erinejkt48-profile.vercel.app/img/profile.jpg"
+            alt="user photo"
+          />
+          <span class="font-semibold text-base hidden sm:inline"
+            >Hi, Aldrin's Girlfriend</span
+          >
+        </button>
+        <!-- Dropdown menu -->
+        <div
+          class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow"
+          id="user-dropdown"
+        >
+          <div class="px-4 py-3">
+            <span class="block font-semibold text-sm text-neutral-900"
+              >Aldrin's Girlfriend</span
+            >
+            <span
+              class="block text-sm text-gray-500 truncate dark:text-gray-400"
+              >aldrinerine@gmail.com</span
+            >
+          </div>
+          <ul class="py-2" aria-labelledby="user-menu-button">
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-neutral-800 hover:bg-gray-100"
+                >Dashboard</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-neutral-800 hover:bg-gray-100"
+                >Settings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-neutral-800 hover:bg-gray-100"
+                >Sign out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="block font-semibold text-sm text-neutral-900">
+        <h1 class="text-3xl">Operasi System</h1>
+        <p class="text-2xl">Sofyan Noor Arief, S.ST., M.Kom.</p>
+        <img class="items-end justify-end border-gray-50" src="/src/img/Operating System.jpg" alt="Operasi System">
+            <div class="col-span-2 flex items-center gap-2">
+                <svg class="w-6 h-6">
+                    <use xlink:href="#icon-location"></use>
+                </svg>
+                <p class="text-sm">R 06.08 6th floor</p>
+            </div>
+            <div class="col-span-2 flex items-center gap-2">
+                <svg class="w-6 h-6">
+                    <use xlink:href="#email"></use>
+                </svg>
+                <p class="text-sm">SofyanNoor@polinema.ac.id</p>
+            </div>
+
+            <div class="col-span-2 flex items-center gap-2">
+                <svg class="w-6 h-6">
+                    <use xlink:href="#icon-phone"></use>
+                </svg>
+                <p class="text-sm">081234567890</p>
+            </div>
+      </div>
+
+
+
+      </section>
+      <footer class="p-7 text-center">
+        <p class="text-base font-semibold">
+          Copyright &copy; <span id="currentYear"></span> LMS Lite. All rights
+          reserved.
+        </p>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>
